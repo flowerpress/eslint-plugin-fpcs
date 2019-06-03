@@ -9,6 +9,10 @@
   ],
   "author": "Matt Rabe",
   "main": "lib/index.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/mattrabe/eslint-plugin-fpcs"
+  },
   "scripts": {
     "test": "mocha tests --recursive"
   },
