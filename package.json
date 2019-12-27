@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "FPCS eslint style rules.",
   "keywords": [
     "eslint",
@@ -17,9 +17,9 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "^5.0.0",
     "mocha": "^6.2.2",
-    "requireindex": "~1.1.0"
+    "requireindex": "^1.1.0"
   },
   "devDependencies": {
   },
