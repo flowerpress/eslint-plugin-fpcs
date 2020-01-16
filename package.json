@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "FPCS eslint style rules.",
   "keywords": [
     "eslint",
@@ -9,10 +9,7 @@
   ],
   "author": "Matt Rabe",
   "main": "lib/index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mattrabe/eslint-plugin-fpcs"
-  },
+  "repository": "github:flowerpress/eslint-plugin-fpcs",
   "scripts": {
     "test": "mocha tests --recursive"
   },
