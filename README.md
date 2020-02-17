@@ -6,48 +6,28 @@ FPCS eslint style rules.
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
-
-```
-$ npm i eslint --save-dev
-```
-
-Next, install `eslint-plugin-fpcs`:
-
 ```
 $ npm install eslint-plugin-fpcs --save-dev
 ```
 
-**Note:** If you installed ESLint globally (using the `-g` flag) then you must also install `eslint-plugin-fpcs` globally.
-
 ## Usage
 
-Add `fpcs` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add the desired configs to the `extends` section of your `.eslintrc` configuration file. e.g.:
 
 ```json
 {
-    "plugins": [
-        "fpcs"
-    ]
+    extends: [
+        'plugin:fpcs/base',
+        'plugin:fpcs/react',
+    ],
 }
 ```
 
+## Available configs:
 
-Then configure the rules you want to use under the rules section.
+* `plugin:fpcs/base`
+* `plugin:fpcs/react`
 
-```json
-{
-    "rules": {
-        "fpcs/rule-name": 2
-    }
-}
-```
+## Available Custom Rules
 
-## Supported Rules
-
-* no-gremlin-chars
-
-
-
-
-
+* `fpcs/no-gremlin-chars` (automatically set to 'error' when using base config)
