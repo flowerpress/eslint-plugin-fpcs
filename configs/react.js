@@ -4,12 +4,6 @@ module.exports = {
     'react-hooks',
   ],
 
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-  },
-
   extends: [
     'plugin:react/recommended'
   ],

@@ -6,10 +6,14 @@ module.exports = {
     'jsx-a11y',
   ],
 
+  parser: 'babel-eslint',
   parserOptions: {
+    allowImportExportEverywhere: false,
     ecmaFeatures: {
+      generators: true,
       jsx: true,
     },
+    sourceType: 'module',
   },
 
   extends: [
@@ -18,6 +22,37 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
   ],
+
+  globals: {
+    window: true,
+    document: true,
+    __dirname: true,
+    __DEV__: true,
+    CONFIG: true,
+    process: true,
+    jest: true,
+    describe: true,
+    test: true,
+    it: true,
+    expect: true,
+    beforeEach: true,
+    fetch: true,
+    alert: true,
+  },
+
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.json'],
+      },
+    },
+    linkComponents: [
+      {
+        name: 'Link',
+        linkAttribute: 'to',
+      },
+    ],
+  },
 
   rules: {
     'array-bracket-newline': [
