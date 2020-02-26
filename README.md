@@ -16,9 +16,9 @@ Add the desired configs to the `extends` section of your `.eslintrc` configurati
 
 ```json
 {
-    extends: [
-        'plugin:fpcs/base',
-        'plugin:fpcs/react',
+    "extends": [
+        "plugin:fpcs/base",
+        "plugin:fpcs/react",
     ],
 }
 ```
