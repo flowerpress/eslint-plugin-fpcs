@@ -21,6 +21,7 @@ module.exports = {
         forbid: ['any', 'array', 'object'],
       },
     ],
+    'react/jsx-boolean-value': ['error', 'always'],
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx'] }],
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
