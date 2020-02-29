@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "FPCS eslint plugin including configs and custom rules.",
   "keywords": [
     "eslint",
@@ -14,7 +14,6 @@
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "babel-eslint": "^10.1.0",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-babel": "^5.3.0",
