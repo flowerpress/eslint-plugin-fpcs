@@ -17,5 +17,7 @@ module.exports = {
 
   rules: {
     indent: indentRule(),
+    'vue/html-indent': ['error', 4],
+    'vue/script-indent': ['error', 4, { switchCase: 1 }],
   },
 }
