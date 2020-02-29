@@ -6,16 +6,6 @@ module.exports = {
     'jsx-a11y',
   ],
 
-  parser: 'babel-eslint',
-  parserOptions: {
-    allowImportExportEverywhere: false,
-    ecmaFeatures: {
-      generators: true,
-      jsx: true,
-    },
-    sourceType: 'module',
-  },
-
   extends: [
     'airbnb',
     'eslint:recommended',
@@ -218,5 +208,5 @@ module.exports = {
     ],
     semi: ['error', 'never'],
     'spaced-comment': ['error', 'always', { markers: ['?'] }],
-  }
-};
+  },
+}

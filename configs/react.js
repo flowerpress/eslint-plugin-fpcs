@@ -4,6 +4,16 @@ module.exports = {
     'react-hooks',
   ],
 
+  parser: 'babel-eslint',
+  parserOptions: {
+    allowImportExportEverywhere: false,
+    ecmaFeatures: {
+      generators: true,
+      jsx: true,
+    },
+    sourceType: 'module',
+  },
+
   extends: [
     'plugin:react/recommended'
   ],
@@ -66,5 +76,5 @@ module.exports = {
         sortShapeProp: true,
       },
     ],
-  }
-};
+  },
+}
