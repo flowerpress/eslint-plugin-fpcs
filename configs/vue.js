@@ -1,9 +1,11 @@
 const indentRule = () => {
   const { rules: { indent: baseIndent } } = require('./base.js')
 
-  baseIndent[1] = 4
+  myIndent = [ ...baseIndent ]
 
-  return [ ...baseIndent ]
+  myIndent[1] = 4
+
+  return [ ...myIndent ]
 }
 
 module.exports = {
