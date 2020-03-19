@@ -153,7 +153,7 @@ module.exports = {
     ],
     'no-case-declarations': 'warn',
     'no-confusing-arrow': 'off',
-    'no-console': 'warn',
+    'no-console': 'error',
     'no-param-reassign': 'off',
     'no-plusplus': 'off',
     'no-shadow': 'off',
