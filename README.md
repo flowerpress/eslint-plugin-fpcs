@@ -7,7 +7,7 @@ FPCS eslint style rules.
 ## Installation
 
 ```
-$ npm install eslint-plugin-fpcs --save-dev
+$ npm install eslint-plugin-fpcs
 ```
 
 ## Usage
