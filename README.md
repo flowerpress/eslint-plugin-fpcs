@@ -18,15 +18,31 @@ Add the desired configs to the `extends` section of your `.eslintrc` configurati
 {
     "extends": [
         "plugin:fpcs/base",
+        "plugin:fpcs/vue",
+    ],
+}
+```
+
+...or...
+
+```json
+{
+    "extends": [
+        "plugin:fpcs/base",
+        "plugin:fpcs/typescript",
         "plugin:fpcs/react",
     ],
 }
 ```
 
+...etc
+
 ## Available configs:
 
 * `plugin:fpcs/base`
 * `plugin:fpcs/react`
+* `plugin:fpcs/typescript`
+* `plugin:fpcs/vue`
 
 ## Available Custom Rules
 
