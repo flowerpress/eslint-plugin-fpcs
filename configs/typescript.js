@@ -11,6 +11,7 @@ module.exports = {
   ],
 
   rules: {
-    '@typescript-eslint/no-explicit-any': 'warn'
+    '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-empty-interface': 'warn'
   }
 }
