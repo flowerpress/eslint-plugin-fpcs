@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "FPCS eslint plugin including configs and custom rules.",
   "keywords": [
     "eslint",
@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^5.15.3",
     "eslint-config-airbnb": "^17.0.0",
@@ -27,8 +28,7 @@
     "mocha": "^6.2.2",
     "requireindex": "^1.1.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=0.10.0"
   },
