@@ -10,9 +10,52 @@ FPCS eslint style rules.
 $ npm install eslint-plugin-fpcs
 ```
 
-## Usage
+## Usage examples
 
-Add the desired configs to the `extends` section of your `.eslintrc` configuration file. e.g.:
+Add the desired configs to the `extends` section of your `.eslintrc` configuration file.
+
+### JavaScript / ECMAScript
+
+```json
+{
+    "extends": [ "plugin:fpcs/base" ],
+}
+```
+
+### TypeScript
+
+```json
+{
+    "extends": [
+        "plugin:fpcs/base",
+        "plugin:fpcs/typescript",
+    ],
+}
+```
+
+### React
+
+```json
+{
+    "extends": [
+        "plugin:fpcs/base",
+        "plugin:fpcs/react",
+    ],
+}
+```
+
+### React TypeScript
+
+```json
+{
+    "extends": [
+        "plugin:fpcs/base",
+        "plugin:fpcs/react-typescript",
+    ],
+}
+```
+
+### Vue
 
 ```json
 {
@@ -23,24 +66,11 @@ Add the desired configs to the `extends` section of your `.eslintrc` configurati
 }
 ```
 
-...or...
-
-```json
-{
-    "extends": [
-        "plugin:fpcs/base",
-        "plugin:fpcs/typescript",
-        "plugin:fpcs/react",
-    ],
-}
-```
-
-...etc
-
 ## Available configs:
 
 * `plugin:fpcs/base`
 * `plugin:fpcs/react`
+* `plugin:fpcs/react-typescript`
 * `plugin:fpcs/typescript`
 * `plugin:fpcs/vue`
 
