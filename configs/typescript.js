@@ -29,6 +29,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-empty-interface': 'warn',
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-unused-vars': [ 'error' ],
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/semi': ['error', 'never'],
     'import/extensions': [
