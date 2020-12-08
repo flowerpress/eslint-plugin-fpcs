@@ -171,6 +171,7 @@ module.exports = {
         allowTaggedTemplates: true,
       },
     ],
+    'no-unused-vars': [ 'error' ],
     'no-use-before-define': 'off',
     'object-curly-newline': [
       'error',
