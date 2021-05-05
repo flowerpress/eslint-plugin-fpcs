@@ -10,9 +10,17 @@ FPCS eslint style rules.
 $ npm install eslint-plugin-fpcs
 ```
 
-## Usage examples
+## Usage
 
-Add the desired configs to the `extends` section of your `.eslintrc` configuration file.
+Add desired config sets to the `extends` section of your `.eslintrc` or `.eslintrc.js` configuration file.
+
+#### Available configs:
+
+* `plugin:fpcs/base`
+* `plugin:fpcs/react`
+* `plugin:fpcs/react-typescript`
+* `plugin:fpcs/typescript`
+* `plugin:fpcs/vue`
 
 ### JavaScript / ECMAScript
 
@@ -66,13 +74,15 @@ Add the desired configs to the `extends` section of your `.eslintrc` configurati
 }
 ```
 
-## Available configs:
+## Add or modify individual rules:
 
-* `plugin:fpcs/base`
-* `plugin:fpcs/react`
-* `plugin:fpcs/react-typescript`
-* `plugin:fpcs/typescript`
-* `plugin:fpcs/vue`
+Add desired config sets to the `rules` section of your `.eslintrc` or `.eslintrc.js` configuration file.
+
+```json
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
+  },
+```
 
 ## Available Custom Rules
 
