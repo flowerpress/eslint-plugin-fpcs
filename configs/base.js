@@ -78,6 +78,7 @@ module.exports = {
     'consistent-return': 'warn',
     'dot-notation': 'warn',
     'eol-last': ['error', 'always'],
+    'eqeqeq': 'error',
     'fpcs/no-gremlin-chars': 'error',
     'global-require': 'warn',
     'import/extensions': [
