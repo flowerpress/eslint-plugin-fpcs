@@ -6,9 +6,7 @@ FPCS eslint style rules.
 
 ## Installation
 
-```
-$ npm install eslint-plugin-fpcs
-```
+`npm install eslint-plugin-fpcs` or `yarn add eslint-plugin-fpcs`
 
 ## Usage
 

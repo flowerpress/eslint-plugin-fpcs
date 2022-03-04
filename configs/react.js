@@ -4,7 +4,7 @@ module.exports = {
     'react-hooks',
   ],
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     allowImportExportEverywhere: false,
     ecmaFeatures: {
