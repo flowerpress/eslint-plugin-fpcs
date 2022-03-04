@@ -183,6 +183,7 @@ module.exports = {
         ObjectPattern: { multiline: true, minProperties: 2 },
       },
     ],
+    'no-var': 'error',
     'object-curly-spacing': ['error', 'always'],
     'object-property-newline': [
       'error',
@@ -203,6 +204,7 @@ module.exports = {
         prev: '*',
       },
     ],
+    'prefer-const': 'error',
     'prefer-destructuring': 'warn',
     'prefer-template': 'warn',
     quotes: [
