@@ -17,12 +17,15 @@
   "engines": {
     "node": "^14 || ^16"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": ">=7.11.0",
     "@babel/eslint-parser": "^7.17.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.13.0",
     "eslint": "8.10.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -31,7 +34,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-vue": "^8.5.0",
     "mocha": "^6.2.2",
-    "requireindex": "^1.2.0"
-  },
-  "devDependencies": {}
+    "requireindex": "^1.2.0",
+    "typescript": ">=3.3.1 <4.6.0"
+  }
 }
