@@ -38,6 +38,7 @@ module.exports = {
     'react/jsx-no-bind': 'error',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-one-expression-per-line': 'off',
+    'react/jsx-props-no-spreading': 'off',
     'react/no-access-state-in-setstate': 'error',
     'react/no-array-index-key': 'warn',
     'react/no-direct-mutation-state': 'error',
