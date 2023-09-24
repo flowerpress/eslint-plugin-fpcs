@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "FPCS eslint plugin including configs and custom rules.",
   "keywords": [
     "eslint",
@@ -22,7 +22,7 @@
     "@babel/eslint-parser": "^7.22.15",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "eslint": "8.50.0",
+    "eslint": "8.33.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-babel": "^5.3.1",
