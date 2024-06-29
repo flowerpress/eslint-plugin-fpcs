@@ -14,6 +14,11 @@ module.exports = {
   ],
 
   rules: {
+    '@typescript-eslint/consistent-type-assertions': [
+      'error',
+      { assertionStyle: 'never' },
+    ],
+    '@typescript-eslint/consistent-type-imports': 'error',
     '@typescript-eslint/member-delimiter-style': [
       'error',
       {
@@ -29,6 +34,8 @@ module.exports = {
     ],
     '@typescript-eslint/no-empty-interface': 'warn',
     '@typescript-eslint/no-explicit-any': 'warn',
+    '@typescript-eslint/no-import-type-side-effects': 'error',
+    '@typescript-eslint/no-non-null-assertion': 'error',
     '@typescript-eslint/no-unused-vars': [ 'error' ],
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/semi': ['error', 'never'],
