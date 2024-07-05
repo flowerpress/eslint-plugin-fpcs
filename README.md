@@ -8,11 +8,11 @@ FPCS eslint style rules.
 
 1. `yarn add --dev eslint-plugin-fpcs`
 1. Install peer dependencies. Most of the peer dependencies on this package are optional, only required for certain platforms.
-    - Install required peer deps: `npx check-peer-dependencies --yarn --install`
+    - Install required peer deps for base config: `npx check-peer-dependencies --yarn --install`
+    - If you are using Babel, install Babel peer deps: `yarn add --dev @babel/eslint-parser@^7.22.15 eslint-plugin-babel@5.3.1`
     - If you are using Typescript, install Typescript peer deps: `yarn add --dev @typescript-eslint/eslint-plugin@7.14.1 @typescript-eslint/parser@7.14.1 eslint-import-resolver-typescript@3.6.1`
     - If you are using React, install React peer deps: `yarn add --dev eslint-config-airbnb@19.0.4 eslint-plugin-jsx-a11y@6.9.0 eslint-plugin-react@7.34.3 eslint-plugin-react-hooks@4.6.2`
     - If you are using Vue, install Vue peer deps: `yarn add --dev eslint-plugin-vue@9.26.0`
-    - If you are using Babel, install Babel peer deps: `yarn add --dev @babel/core@">=7.11.0" @babel/eslint-parser@^7.22.15 eslint-plugin-babel@5.3.1`
     - Confirm peer deps for peace of mind: `npx check-peer-dependencies --yarn`
 
 ## Migrating from v1.x to v2.x
@@ -25,7 +25,7 @@ FPCS eslint style rules.
 
 #### Babel has been split off into a separate config
 
-If you use babel, you will need to add `"plugin:fpcs/babel"` to the `extends` section of your .eslintrc file
+If you use babel, you will need to add `"plugin:fpcs/babel"` to the `extends` section of your .eslintrc file. Make sure to place it directly after `base`, before any other configs like typescript or react.
 
 #### `prefer-default-export` removed in favor of opposite `no-default-export`
 
@@ -41,7 +41,7 @@ To use v2 you will need to do one of the following:
 rules: {
   'import/no-default-export': 'off',
   'import/prefer-default-export': 'warn',
-  'no-restricted-exports': 'off'
+  'no-restricted-exports': 'off',
 }
 ```
 
@@ -54,11 +54,11 @@ Add desired config sets to the `extends` section of your `.eslintrc` or `.eslint
 #### Available configs:
 
 * `plugin:fpcs/base`
+* `plugin:fpcs/babel`
 * `plugin:fpcs/react`
 * `plugin:fpcs/react-typescript`
 * `plugin:fpcs/typescript`
 * `plugin:fpcs/vue`
-* `plugin:fpcs/babel`
 
 ### JavaScript / ECMAScript
 
@@ -121,6 +121,7 @@ Typically used on a React app that gets transpiled by babel.
     "extends": [
         "plugin:fpcs/base",
         "plugin:fpcs/babel",
+        ...if you extend other configs place them here, AFTER babel...
     ],
 }
 ```

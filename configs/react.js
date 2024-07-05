@@ -6,7 +6,11 @@ module.exports = {
   ],
 
   extends: [
-    'airbnb',
+    // Do not extend the `airbnb` config here directly, as it will re-extend `airbnb-base` which we already extend in our `base`. That leads to duplicate rules that need to be overridden more than once.
+    // Instead, extend the individual `airbnb/rules/*` rulesets.
+    'airbnb/rules/react',
+    'airbnb/rules/react-a11y',
+    'airbnb/rules/react-hooks',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
   ],

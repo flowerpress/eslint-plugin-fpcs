@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fpcs",
-  "version": "2.0.0-alpha.0",
+  "version": "2.0.0-alpha.1",
   "description": "FPCS eslint plugin including configs and custom rules.",
   "keywords": [
     "eslint",
@@ -22,7 +22,6 @@
     "requireindex": "^1.2.0"
   },
   "peerDependencies": {
-    "@babel/core": ">=7.11.0",
     "@babel/eslint-parser": "^7.22.15",
     "@typescript-eslint/eslint-plugin": "7.14.1",
     "@typescript-eslint/parser": "7.14.1",
@@ -39,9 +38,6 @@
     "eslint-plugin-vue": "9.26.0"
   },
   "peerDependenciesMeta": {
-    "@babel/core": {
-      "optional": true
-    },
     "@babel/eslint-parser": {
       "optional": true
     },
