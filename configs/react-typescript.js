@@ -1,5 +1,3 @@
-const base = require('./base')
-
 module.exports = {
   parser: '@typescript-eslint/parser',
 
@@ -16,5 +14,6 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.tsx'] }],
     'react/prop-types': 'off',
+    'react/require-default-props': 'off',
   }
 }

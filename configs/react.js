@@ -2,23 +2,32 @@ module.exports = {
   plugins: [
     'react',
     'react-hooks',
+    'jsx-a11y',
   ],
 
-  parser: '@babel/eslint-parser',
-  parserOptions: {
-    allowImportExportEverywhere: false,
-    ecmaFeatures: {
-      generators: true,
-      jsx: true,
-    },
-    sourceType: 'module',
-  },
-
   extends: [
-    'plugin:react/recommended'
+    // Do not extend the `airbnb` config here directly, as it will re-extend `airbnb-base` which we already extend in our `base`. That leads to duplicate rules that need to be overridden more than once.
+    // Instead, extend the individual `airbnb/rules/*` rulesets.
+    'airbnb/rules/react',
+    'airbnb/rules/react-a11y',
+    'airbnb/rules/react-hooks',
+    'plugin:react/recommended',
+    'plugin:jsx-a11y/recommended',
   ],
 
   rules: {
+    'jsx-a11y/anchor-is-valid': [
+      'error',
+      {
+        aspects: ['noHref', 'invalidHref', 'preferButton'],
+        components: ['Link'],
+        specialLink: ['link', 'to'],
+      },
+    ],
+    'jsx-a11y/label-has-associated-control': 'error',
+    'jsx-a11y/label-has-for': 'off',
+    'jsx-a11y/no-static-element-interactions': 'warn',
+    'jsx-quotes': ['error', 'prefer-single'],
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react/destructuring-assignment': 'off',

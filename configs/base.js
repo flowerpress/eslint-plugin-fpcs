@@ -1,16 +1,13 @@
 module.exports = {
   plugins: [
-    'babel',
     'fpcs',
     'import',
-    'jsx-a11y',
   ],
 
   extends: [
-    'airbnb',
+    'airbnb-base',
     'eslint:recommended',
     'plugin:import/recommended',
-    'plugin:jsx-a11y/recommended',
   ],
 
   globals: {
@@ -62,7 +59,6 @@ module.exports = {
       },
     ],
     'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
-    'babel/semi': ['error', 'never'],
     'brace-style': ['error', 'stroustrup'],
     camelcase: 'off',
     'comma-dangle': [
@@ -80,6 +76,7 @@ module.exports = {
     'eol-last': ['error', 'always'],
     'eqeqeq': 'error',
     'fpcs/no-gremlin-chars': 'error',
+    'fpcs/prefer-early-return': 'error',
     'global-require': 'warn',
     'import/extensions': [
       'error',
@@ -97,6 +94,7 @@ module.exports = {
         allowComputed: true,
       },
     ],
+    'import/no-default-export': 'warn',
     'import/no-named-default': 'warn',
     'import/no-extraneous-dependencies': [
       'error',
@@ -121,24 +119,12 @@ module.exports = {
         'newlines-between': 'always-and-inside-groups',
       },
     ],
-    'import/prefer-default-export': 'warn',
+    'import/prefer-default-export': 'off',
     indent: [
       'error',
       2,
       { SwitchCase: 1 }
     ],
-    'jsx-a11y/anchor-is-valid': [
-      'error',
-      {
-        aspects: ['noHref', 'invalidHref', 'preferButton'],
-        components: ['Link'],
-        specialLink: ['link', 'to'],
-      },
-    ],
-    'jsx-a11y/label-has-associated-control': 'error',
-    'jsx-a11y/label-has-for': 'off',
-    'jsx-a11y/no-static-element-interactions': 'warn',
-    'jsx-quotes': ['error', 'prefer-single'],
     'linebreak-style': 'off',
     'lines-between-class-members': ['error', 'always'],
     'max-len': [
@@ -156,9 +142,14 @@ module.exports = {
     'no-case-declarations': 'warn',
     'no-confusing-arrow': 'off',
     'no-console': 'error',
+    'no-else-return': 'warn',
     'no-multiple-empty-lines': 'error',
     'no-param-reassign': 'off',
     'no-plusplus': 'off',
+    'no-restricted-exports': [
+      'warn',
+      { 'restrictedNamedExports': [ 'default' ] },
+    ],
     'no-shadow': 'off',
     'no-trailing-spaces': 'error',
     'no-underscore-dangle': 'off',
